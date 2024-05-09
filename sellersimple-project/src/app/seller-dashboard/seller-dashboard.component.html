@@ -1,0 +1,116 @@
+<div class="dashboard-main">
+    <div class="sidebar">
+        <div class="otr">
+            <div class="logo-brand">
+                <a href="">
+                    <img src="../../assets/img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="collapseToggle">
+                <span id="toggleIcon" class="toggle-icon fas fa-bars"></span>
+            </div>
+        </div>
+        <ul class="nav nav-sidebar">
+            <li>
+                <a [routerLink]="['/seller/']" aria-current="page">
+                    <span class="menu-icon active"><img src="../../assets/img/menu-icon-01.svg" alt=""></span>
+                    <span class="menutext">Home</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller/analytics']">
+                    <span class="menu-icon"><img src="../../assets/img/menu-icon-02.svg" alt=""></span>
+                    <span class="menutext">Analytics</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller']">
+                    <span class="menu-icon"><img src="../../assets/img/menu-icon-03.svg" alt=""></span>
+                    <span class="menutext">Monitoring</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller']">
+                    <span class="menu-icon"><img src="../../assets/img/menu-icon-04.svg" alt=""></span>
+                    <span class="menutext">Products</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller']">
+                    <span class="menu-icon"><img src="../../assets/img/menu-icon-05.svg" alt=""></span>
+                    <span class="menutext">Reviews</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller/customer']">
+                    <span class="menu-icon"><img src="../../assets/img/menu-icon-05.svg" alt=""></span>
+                    <span class="menutext">Customers</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller']">
+                    <span class="menu-icon"><img src="../../assets/img/menu-icon-06.svg" alt=""></span>
+                    <span class="menutext">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="dashboard-header">
+            <div class="hdg">Welcome John Doe</div>
+            <div class="right-sctn">
+                <div class="search-otr">
+                    <i><img src="../../assets/img/search-icon.svg" alt=""></i>
+                    <input type="text" placeholder="Search here...">
+                </div>
+                
+
+                <div class="dropdown notify-drop custom-drop">
+                    <div class="notify"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../../assets/img/notification-alert.svg" alt="">
+                        <div class="count">
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li>
+                            <a class="dropdown-item" href="#"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<span class="date">2 Days ago</span></a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<span class="date">8 Minutes ago</span></a>
+                        </li>
+                        </ul>
+                </div>
+
+                <div class="dropdown profile-drop custom-drop">
+                    <div class="user-profile">
+                        <img src="../../assets/img/user-profile.svg" alt="">
+                    </div>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        John Doe
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content-area">
+
+
+            <router-outlet></router-outlet>
+
+
+
+            
+        </div>
+    </div>
+</div>
+<script>
+     $('.collapseToggle').on('click', function() {
+	$(".sidebar").toggleClass('sidebar--Collapse');
+	$('.main').toggleClass('main--slide');	$('#toggleIcon').toggleClass('close-icon');
+});
+</script>

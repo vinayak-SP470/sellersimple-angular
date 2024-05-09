@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+	<title>play-btn-svg</title>
+	<defs>
+		<image  width="22" height="29" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAdAQMAAACUvQ67AAAAAXNSR0IB2cksfwAAAANQTFRFHMbTMDyUaAAAAAxJREFUeJxjYKA/AAAAdAABDd2ObAAAAABJRU5ErkJggg=="/>
+		<image  width="25" height="7" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAHAQMAAADH+3TLAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAAtJREFUeJxjYCAIAAAjAAEouIuXAAAAAElFTkSuQmCC"/>
+		<image  width="25" height="7" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAHAQMAAADH+3TLAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAAtJREFUeJxjYCAIAAAjAAEouIuXAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { fill: #ffffff } 
+		.s1 { fill: #1cc6d3 } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="s0" d="m29 47c-9.4 0-17-7.6-17-17 0-9.4 7.6-17 17-17 9.4 0 17 7.6 17 17 0 9.4-7.6 17-17 17z"/>
+		<path id="Layer" fill-rule="evenodd" class="s1" d="m41 2.3c3.6 1.4 6.8 3.6 9.6 6.4 2.7 2.7 4.9 6 6.4 9.6 1.5 3.6 2.2 7.4 2.2 11.3 0 12-7.2 22.8-18.2 27.4-11.1 4.6-23.9 2-32.3-6.4-8.5-8.5-11-21.3-6.4-32.3 4.5-11.1 15.3-18.3 27.3-18.3 3.9 0 7.8 0.8 11.4 2.3zm0.5 27.3l-17.8-13.3v26.7z"/>
+		<use id="Layer 1" href="#img1" x="20" y="16"/>
+		<use id="Layer 2" href="#img2" x="17" y="20"/>
+		<use id="Layer 2 copy" href="#img3" x="17" y="30"/>
+	</g>
+</svg>

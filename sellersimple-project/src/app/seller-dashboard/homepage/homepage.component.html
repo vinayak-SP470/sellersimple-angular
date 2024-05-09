@@ -1,0 +1,564 @@
+<div class="title-area">
+    <h1>Metrics Summary</h1>
+</div>
+<div class="grid-outer">
+    <div class="area-first">
+        <div class="summary-box-otr">
+            <div class="summary-box revenue">
+                <i><img src="../../../assets/img/revenue.svg" alt=""></i>
+                <div class="rgt">
+                    <strong>Revenue</strong>
+                    <div class="growth">$1400</div>
+                    <div class="trending up">
+                        <img src="../../../assets/img/trending-up.svg" alt="">
+                        <span>2.5%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box profit">
+                <i><img src="../../../assets/img/stock-exchange-app.svg" alt=""></i>
+                <div class="rgt">
+                    <strong>Profits</strong>
+                    <div class="growth">$200</div>
+                    <div class="trending down">
+                        <img src="../../../assets/img/trending-down.svg" alt="">
+                        <span>1.5%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-box units-sold">
+                <i><img src="../../../assets/img/hand-shake.svg" alt=""></i>
+                <div class="rgt">
+                    <strong>Units Sold</strong>
+                    <div class="growth">76</div>
+                    <div class="trending up">
+                        <img src="../../../assets/img/trending-up.svg" alt="">
+                        <span>2.5%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-main">
+            <div class="tab_menu">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" [class.active]="activeTab === 'one'" (click)="toggleTab('one')" id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">
+                Top Alerts
+                <span>24</span>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" [class.active]="activeTab === 'two'" (click)="toggleTab('two')" id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">
+                Top Negative Reviews
+                <span>15</span>
+            </button>
+        </li>
+    </ul>
+</div>
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="table-otr table-responsive tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="width-003">
+                                    <div class="sort">
+                                        <span>SI NO</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="sort">
+                                        <span> Product List</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="width-001">
+                                    <div class="sort">
+                                        <span> Date</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="sort">
+                                        <span> Alert</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                                        </div>
+                                        <p>Noise ColorFit Pro 3 Smart Watch with 1.55" HD Color Touch Screen, Sp</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>New Competitor</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>Main image changed</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/81Ha+SI+QML._SX679_@2x.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>Main image changed</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>Main image changed</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>Main image changed</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>Main image changed</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>03/03/2021</td>
+                                <td>Main image changed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-otr table-responsive tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="width-003">
+                                    <div class="sort">
+                                        <span>SI NO</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="sort">
+                                        <span> Product List</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="width-001">
+                                    <div class="sort">
+                                        <span>Reviews</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="sort">
+                                        <span>Rating</span>
+                                        <div class="otr">
+                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Noise ColorFit Pro 3 Smart Watch with 1.55" HD Color Touch Screen, Sp</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <div class="otr">
+                                        <div class="product">
+                                            <img src="../../../assets/img/product-01.png" alt="">
+                                        </div>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                    </div>
+                                </td>
+                                <td>Not Sturdy</td>
+                                <td>
+                                    <div class="star-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                        <i class="bi bi-star-fill not-fill"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div class="table-footer">
+            <div class="more"><a href=""> See More</a> <i> <img src="../../../assets/img/arrow-more.svg" alt=""> </i></div>
+        </div>
+    </div>
+
+    <div class="area-second">
+        <div class="product-list list_items-otr">
+            <div class="list_items">
+                <div class="sm-head">
+                    <strong>Top Performing Products</strong>
+                    <div class="more"><a href=""> See More</a> <i> <img src="../../../assets/img/arrow-more.svg" alt=""> </i>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_@2x.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_@2x.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_@2x.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="otr">
+                            <div class="product">
+                                <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                            </div>
+                            <div class="info-otr">
+                                <p>ASUS ROG Strix G17, 17.3" FHD 120Hz, Intel Core i7-107 50H 10th Gen, GTX 1660Ti 6GB Graphics (16GB RAM...
+                                </p>
+
+                                <small>
+                        <div>
+                            <p>Revenew: <strong>$1,256</strong></p>
+                        </div>
+                        <div>
+                            <p>Unit: <strong>51</strong></p>
+                        </div>
+                    </small>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,9 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17" width="19" height="17">
+	<title>icon-filter-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width: 2 } 
+	</style>
+	<path id="Layer" class="shp0" d="M17.1 1L1 1L7.44 8.62L7.44 13.88L10.66 15.49L10.66 8.62L17.1 1Z" />
+	<path id="Shape 1" class="shp0" d="M3 9L13 0" />
+</svg>

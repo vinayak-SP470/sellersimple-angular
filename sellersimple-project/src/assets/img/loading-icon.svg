@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Subtraction_1_1_);}
+</style>
+<g id="Group_17937" transform="translate(-3 -0.001)">
+	
+		<linearGradient id="Subtraction_1_1_" gradientUnits="userSpaceOnUse" x1="-4.2131" y1="23.2074" x2="-3.4981" y2="22.5054" gradientTransform="matrix(13 0 0 -13 60 304.013)">
+		<stop  offset="0" style="stop-color:#3ECEDA"/>
+		<stop  offset="1" style="stop-color:#1F676D"/>
+	</linearGradient>
+	<path id="Subtraction_1" class="st0" d="M10,13.5c-3.6,0-6.5-2.9-6.5-6.5c0-3.6,2.9-6.5,6.5-6.5c3.6,0,6.5,2.9,6.5,6.5
+		c0,0.4,0,0.8-0.1,1.2l-1.6,0.1C14.9,7.9,15,7.4,15,7c0-2.8-2.2-5-5-5S5,4.2,5,7c0,2.8,2.2,5,5,5c0.3,0,0.6,0,0.8-0.1l-0.1,1.5
+		C10.5,13.5,10.3,13.5,10,13.5z"/>
+</g>
+</svg>
