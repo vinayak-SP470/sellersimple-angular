@@ -19,6 +19,8 @@ import { MonitoringComponent } from './seller-dashboard/monitoring/monitoring.co
 import { ProductsComponent } from './seller-dashboard/products/products.component';
 import { ReviewsComponent } from './seller-dashboard/reviews/reviews.component';
 import { CustomersComponent } from './seller-dashboard/customers/customers.component';
+import { SettingsComponent } from './seller-dashboard/settings/settings.component';
+import { AiVideoComponent } from './seller-dashboard/ai-video/ai-video.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { CustomersComponent } from './seller-dashboard/customers/customers.compo
     ProductsComponent,
     ReviewsComponent,
     CustomersComponent,
+    SettingsComponent,
+    AiVideoComponent,
   ],
   imports: [
     BrowserModule,

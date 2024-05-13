@@ -1,0 +1,191 @@
+<div class="forms-3-col mt-5">
+    <div class="box-otr profile-info">
+
+        <div class="choos-img">
+            <input type="file" class="custom-file-input">
+            <img class="avathar" src="../../../assets/img/img3.jpg" alt="">
+            <button class="edit"><i><img src="../../../assets/img/gallery-add.svg" alt=""></i></button>
+        </div>
+        <div class="deatils">
+            <strong>John Doe</strong>
+            <p>johndoe0264gmail.com</p>
+        </div>
+
+        <!-- <div class="ftr">
+            <p>Copyright © Setup a store . All Rights Reserved.</p>
+        </div> -->
+    </div>
+    <div class="box-otr">
+        <div class="sub-heading d-flex  justify-content-between flex-wrap">
+            <h4 class="mb-0">My Account</h4>
+            <div class="head-btns">
+                <button data-bs-toggle="modal" data-bs-target="#resetModal" type="button" class="btn btn-light  me-xl-3 me-1"> Reset Password </button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal" class="btn btn-green"> Edit Profile</button>
+            </div>
+        </div>
+        <div class="forms-main row">
+            <div class="col-12 p-s-e">
+                <div class="input-holder">
+                    <label for="">Name</label>
+                    <input class="form_control" type="text" placeholder="John philip">
+                </div>
+            </div>
+            <div class="col-md-6 p-s-e">
+                <div class="input-holder">
+                    <label for="">Email</label>
+                    <input class="form_control" type="text" placeholder="johndoe0264@gmail.com">
+                </div>
+            </div>
+            <div class="col-md-6 p-s-e">
+                <div class="input-holder">
+                    <label for="">Phone Numbre</label>
+                    <input class="form_control" type="text" placeholder="+91 385 233 5390">
+                </div>
+            </div>
+            <div class="col-12 p-s-e">
+                <div class="input-holder">
+                    <label for="">My address</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form_control" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry"></textarea>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="box-otr">
+        <div class="sub-heading d">
+            <h4 class="mb-0">Update logo</h4>
+        </div>
+        <div class="file-upload-inner">
+            <div class="file-upload">
+                <div class="file-wrap">
+                    <img src="../../../assets/img/upload-img.svg">
+                    
+                </div>
+                <label class="file-upload__label"></label>
+                <input class="file-upload__input" multiple="" type="file" />
+                <span class="updated-file"></span>
+                
+            </div>
+            <h4 class="">Drop your image here, or browse</h4>
+            <p>Supports JPG, PNG, PDF</p>
+            <!-- <div class="progress-inner">
+                <h4>Uploading</h4>
+                <small>50% .4 Second left</small>
+                <a href="" class="close"> <img src="../../../assets/img/close-icon.svg"></a>
+                <div class="progress">
+                    <div class="bar" style="width: 75%">
+                       
+                    </div>
+                </div>
+            </div> -->
+           
+        </div>
+    </div>
+</div>
+
+   <!-- Edit modal  -->
+   <div class="modal fade cusotm-modal change-number-modal" id="editModal" tabindex="-1" aria-labelledby="costModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="costModalLabel">Edit Profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="change-number-modal-body">
+                   <div class="number-form-cover cost-form-cover row">
+                        <div class="form-col col-md-6">
+                            <label for="changeNumber" class="form-label">Label</label>
+                            <input type="text" class="form-control" id="changeNumber" placeholder="********">
+                        </div>
+                        <div class="form-col col-md-6">
+                            <label for="changeNumber"  class="form-label">Label</label>
+                            <input type="text" class="form-control" id="changeNumber" placeholder="********"> 
+                        </div>
+                        <div class="form-col col-md-6">
+                            <label for="changeNumber"  class="form-label">Select Option</label>
+                           <select class="form-control" name="" id="">
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                           </select>
+                        </div>
+                        <div class="form-col col-md-6">
+                            <label for="changeNumber"  class="form-label">Select Option</label>
+                           <select class="form-control" name="" id="">
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                               <option value="">Option</option>
+                           </select>
+                        </div>
+                        <div class="form-col col-md-12">
+                            <label for="changeNumber"  class="form-label">Textarea</label>
+                           <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal-close" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-apply">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Edit modal End  -->
+
+<!-- Reset password  -->
+<div class="modal fade cusotm-modal change-number-modal" id="resetModal" tabindex="-1" aria-labelledby="costModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="costModalLabel">Reset Password</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="change-number-modal-body">
+                   <div class="number-form-cover cost-form-cover">
+                        <div class="form-col">
+                            <label for="changeNumber" class="form-label">Old Password</label>
+                            <input type="text" class="form-control" id="changeNumber" placeholder="********">
+                        </div>
+                        <div class="form-col">
+                            <label for="changeNumber" class="form-label">New Password</label>
+                            <input type="text" class="form-control" id="changeNumber" placeholder="********"> 
+                        </div>
+                        <div class="form-col">
+                            <label for="changeNumber" class="form-label">Confirm Password</label>
+                            <input type="text" class="form-control" id="changeNumber" placeholder="********">
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-modal-close" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-apply">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Reset password  -->
+
+ <script>
+    $('#datepicker').datepicker();
+    (function() {
+        $(function() {
+            return $('.file-upload__input').on('change', function() {
+                return $('.updated-file').html([this.files.length, 'Files to upload'].join(' '));
+            });
+        });
+
+    }).call(this);
+</script>

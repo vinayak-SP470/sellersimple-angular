@@ -6,9 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './homepage.component.scss'
 })
 export class HomepageComponent {
-  activeTab: string = 'one';
-
-  toggleTab(tab: string) {
-    this.activeTab = tab;
-  }
+  active = 1;
+  
 }

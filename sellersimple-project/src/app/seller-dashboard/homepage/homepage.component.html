@@ -40,357 +40,356 @@
         </div>
         <div class="table-main">
             <div class="tab_menu">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" [class.active]="activeTab === 'one'" (click)="toggleTab('one')" id="one-tab" data-bs-toggle="tab" data-bs-target="#one" type="button" role="tab" aria-controls="one" aria-selected="true">
-                Top Alerts
-                <span>24</span>
-            </button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" [class.active]="activeTab === 'two'" (click)="toggleTab('two')" id="two-tab" data-bs-toggle="tab" data-bs-target="#two" type="button" role="tab" aria-controls="two" aria-selected="false">
-                Top Negative Reviews
-                <span>15</span>
-            </button>
-        </li>
-    </ul>
+                <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+                    <li [ngbNavItem]="1">
+                        <button ngbNavLink>Top Alerts <span>24</span></button>
+                        <ng-template ngbNavContent>
+                            <div class="table-otr table-responsive tab-pane show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="width-003">
+                                                <div class="sort">
+                                                    <span>SI NO</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="sort">
+                                                    <span> Product List</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th class="width-001">
+                                                <div class="sort">
+                                                    <span> Date</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="sort">
+                                                    <span> Alert</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                                                    </div>
+                                                    <p>Noise ColorFit Pro 3 Smart Watch with 1.55" HD Color Touch Screen, Sp</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>New Competitor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>Main image changed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/81Ha+SI+QML._SX679_@2x.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>Main image changed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>Main image changed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>Main image changed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>Main image changed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>03/03/2021</td>
+                                            <td>Main image changed</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                        <button ngbNavLink>Top Negative Reviews <span>15</span></button>
+                        <ng-template ngbNavContent>
+                            <div class="table-otr table-responsive tab-pane" id="two" role="tabpanel" aria-labelledby="two-tab">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th class="width-003">
+                                                <div class="sort">
+                                                    <span>SI NO</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="sort">
+                                                    <span> Product List</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th class="width-001">
+                                                <div class="sort">
+                                                    <span>Reviews</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="sort">
+                                                    <span>Rating</span>
+                                                    <div class="otr">
+                                                        <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
+                                                        <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Noise ColorFit Pro 3 Smart Watch with 1.55" HD Color Touch Screen, Sp</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+            
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                <div class="otr">
+                                                    <div class="product">
+                                                        <img src="../../../assets/img/product-01.png" alt="">
+                                                    </div>
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
+                                                </div>
+                                            </td>
+                                            <td>Not Sturdy</td>
+                                            <td>
+                                                <div class="star-rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                    <i class="bi bi-star-fill not-fill"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </ng-template>
+                    </li>
+                </ul>
+                
+                <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    
 </div>
 
 
-            <div class="tab-content" id="myTabContent">
-                <div class="table-otr table-responsive tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th class="width-003">
-                                    <div class="sort">
-                                        <span>SI NO</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="sort">
-                                        <span> Product List</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                                <th class="width-001">
-                                    <div class="sort">
-                                        <span> Date</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="sort">
-                                        <span> Alert</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
-                                        </div>
-                                        <p>Noise ColorFit Pro 3 Smart Watch with 1.55" HD Color Touch Screen, Sp</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>New Competitor</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/81Ha+SI+QML._SX679_.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>Main image changed</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/81Ha+SI+QML._SX679_@2x.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>Main image changed</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>Main image changed</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>Main image changed</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>Main image changed</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>03/03/2021</td>
-                                <td>Main image changed</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="table-otr table-responsive tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th class="width-003">
-                                    <div class="sort">
-                                        <span>SI NO</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="sort">
-                                        <span> Product List</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                                <th class="width-001">
-                                    <div class="sort">
-                                        <span>Reviews</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="sort">
-                                        <span>Rating</span>
-                                        <div class="otr">
-                                            <button><img src="../../../assets/img/chevron-up.svg" alt=""></button>
-                                            <button><img src="../../../assets/img/chevron-down.svg" alt=""></button>
-                                        </div>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Noise ColorFit Pro 3 Smart Watch with 1.55" HD Color Touch Screen, Sp</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>
-                                    <div class="otr">
-                                        <div class="product">
-                                            <img src="../../../assets/img/product-01.png" alt="">
-                                        </div>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium</p>
-                                    </div>
-                                </td>
-                                <td>Not Sturdy</td>
-                                <td>
-                                    <div class="star-rating">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                        <i class="bi bi-star-fill not-fill"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+         
 
         </div>
         <div class="table-footer">

@@ -24,19 +24,19 @@
                 </a>
             </li>
             <li>
-                <a [routerLink]="['/seller']">
+                <a [routerLink]="['/seller/monitoring']">
                     <span class="menu-icon"><img src="../../assets/img/menu-icon-03.svg" alt=""></span>
                     <span class="menutext">Monitoring</span>
                 </a>
             </li>
             <li>
-                <a [routerLink]="['/seller']">
+                <a [routerLink]="['/seller/products']">
                     <span class="menu-icon"><img src="../../assets/img/menu-icon-04.svg" alt=""></span>
                     <span class="menutext">Products</span>
                 </a>
             </li>
             <li>
-                <a [routerLink]="['/seller']">
+                <a [routerLink]="['/seller/reviews']">
                     <span class="menu-icon"><img src="../../assets/img/menu-icon-05.svg" alt=""></span>
                     <span class="menutext">Reviews</span>
                 </a>
@@ -48,9 +48,15 @@
                 </a>
             </li>
             <li>
-                <a [routerLink]="['/seller']">
+                <a [routerLink]="['/seller/settings']">
                     <span class="menu-icon"><img src="../../assets/img/menu-icon-06.svg" alt=""></span>
                     <span class="menutext">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/seller/ai-video']">
+                    <span class="menu-icon"></span>
+                    <span class="menutext">AI-video Creation</span>
                 </a>
             </li>
         </ul>
@@ -86,14 +92,28 @@
                     <div class="user-profile">
                         <img src="../../assets/img/user-profile.svg" alt="">
                     </div>
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    
+                    <div ngbDropdown class="d-inline-block">
+                        <button type="button" class="btn btn-secondary" id="dropdownBasic1" ngbDropdownToggle>
+                            John Doe
+                        </button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button ngbDropdownItem [routerLink]="['/seller/settings']">Profile</button>
+                            <button ngbDropdownItem>Logout</button>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         John Doe
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Profile</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>

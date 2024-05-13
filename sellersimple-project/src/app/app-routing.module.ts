@@ -10,6 +10,11 @@ import { SellerDashboardComponent } from './seller-dashboard/seller-dashboard.co
 import { HomepageComponent } from './seller-dashboard/homepage/homepage.component';
 import { AnalyticsComponent } from './seller-dashboard/analytics/analytics.component';
 import { CustomersComponent } from './seller-dashboard/customers/customers.component';
+import { ProductsComponent } from './seller-dashboard/products/products.component';
+import { MonitoringComponent } from './seller-dashboard/monitoring/monitoring.component';
+import { ReviewsComponent } from './seller-dashboard/reviews/reviews.component';
+import { SettingsComponent } from './seller-dashboard/settings/settings.component';
+import { AiVideoComponent } from './seller-dashboard/ai-video/ai-video.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/spericorn/login', pathMatch: 'full' },
@@ -30,6 +35,16 @@ const routes: Routes = [
       { path: '', component: HomepageComponent },
       { path: 'analytics', component: AnalyticsComponent },
       { path: 'customer', component: CustomersComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'monitoring', component: MonitoringComponent },
+      { path: 'reviews', component: ReviewsComponent },
+      { path: 'settings', component: SettingsComponent },
+      { path: 'ai-video', component: AiVideoComponent },
+
+
+
+
+
 
 
       // { path: 'signin', component: SigninComponent },
