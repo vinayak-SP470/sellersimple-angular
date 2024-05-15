@@ -21,6 +21,10 @@ import { ReviewsComponent } from './seller-dashboard/reviews/reviews.component';
 import { CustomersComponent } from './seller-dashboard/customers/customers.component';
 import { SettingsComponent } from './seller-dashboard/settings/settings.component';
 import { AiVideoComponent } from './seller-dashboard/ai-video/ai-video.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { DashboardComponent } from './admin-navbar/dashboard/dashboard.component';
+import { CustomerComponent } from './admin-navbar/customer/customer.component';
+import { DealsComponent } from './admin-navbar/deals/deals.component';
 
 
 @NgModule({
@@ -41,6 +45,10 @@ import { AiVideoComponent } from './seller-dashboard/ai-video/ai-video.component
     CustomersComponent,
     SettingsComponent,
     AiVideoComponent,
+    AdminNavbarComponent,
+    DashboardComponent,
+    CustomerComponent,
+    DealsComponent,
   ],
   imports: [
     BrowserModule,

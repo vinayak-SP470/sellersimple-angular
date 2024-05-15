@@ -1,0 +1,90 @@
+
+
+    <div class="dashboard-main">
+        <div class="sidebar">
+            <div class="otr">
+                <div class="logo-brand">
+                    <a href="">
+                        <img src="../../assets/img/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="collapseToggle">
+                    <span id="toggleIcon" class="toggle-icon fas fa-bars"></span>
+                </div>
+            </div>
+            <ul class="nav nav-sidebar">
+                <li class="active">
+                    <a [routerLink]="['/admin/']">
+                        <span class="menu-icon"><img src=" ../../assets/img/menu-icon-01.svg" alt=""></span>
+                        <span class="menutext">Home</span>
+                    </a>
+                </li>
+                <li >
+                    <a [routerLink]="['/admin/customers']">
+                        <span class="menu-icon"><img src=" ../../assets/img/menu-icon-02.svg" alt=""></span>
+                        <span class="menutext">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/admin/deals']">
+                        <span class="menu-icon"><img src=" ../../assets/img/menu-icon-03.svg" alt=""></span>
+                        <span class="menutext">Deals</span>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a [routerLink]="['/seller/products']">
+                        <span class="menu-icon"><img src=" ../../assets/img/menu-icon-04.svg" alt=""></span>
+                        <span class="menutext">FAQ</span>
+                    </a>
+                </li> -->
+               
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="dashboard-header">
+                <div class="hdg">Welcome Admin</div>
+                <div class="right-sctn">
+                    <div class="search-otr">
+                        <i><img src=" ../../assets/img/search-icon.svg" alt=""></i>
+                        <input type="text" placeholder="Search here...">
+                    </div>
+                    <div class="notify">
+                        <img src=" ../../assets/img/notification-alert.svg" alt="">
+                        <div class="count">
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <div class="dropdown profile-drop custom-drop">
+                        <div class="user-profile">
+                            <img src=" ../../assets/img/user-profile.svg" alt="">
+                        </div>
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                     </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content-area-main new-table-style-otr">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery-3.5.1.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- <script src="js/vendor/popper.min.js"></script> -->
+    <!-- <script src="js/vendor/bootstrap.min.js"></script> -->
+    <script src="js/sidenav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js" integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('#datepicker').datepicker();
+    </script>

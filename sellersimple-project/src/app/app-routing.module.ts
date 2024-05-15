@@ -15,6 +15,10 @@ import { MonitoringComponent } from './seller-dashboard/monitoring/monitoring.co
 import { ReviewsComponent } from './seller-dashboard/reviews/reviews.component';
 import { SettingsComponent } from './seller-dashboard/settings/settings.component';
 import { AiVideoComponent } from './seller-dashboard/ai-video/ai-video.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { DashboardComponent } from './admin-navbar/dashboard/dashboard.component';
+import { DealsComponent } from './admin-navbar/deals/deals.component';
+import { CustomerComponent } from './admin-navbar/customer/customer.component';
 
 const routes: Routes = [
   // { path: '', redirectTo: '/spericorn/login', pathMatch: 'full' },
@@ -40,17 +44,15 @@ const routes: Routes = [
       { path: 'reviews', component: ReviewsComponent },
       { path: 'settings', component: SettingsComponent },
       { path: 'ai-video', component: AiVideoComponent },
-
-
-
-
-
-
-
-      // { path: 'signin', component: SigninComponent },
-      // { path: 'faq', component: FaqComponent },
-      // { path: 'pricing', component: PricingComponent },
-      // { path: 'contact-us', component: ContactUsComponent },
+]
+  },
+  {
+    path: 'admin', component: AdminNavbarComponent,
+    children: [
+      { path: '', component: DashboardComponent },
+      { path: 'customers', component: CustomerComponent },
+      { path: 'deals', component: DealsComponent },
+    
 ]
   },
  
